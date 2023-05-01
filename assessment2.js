@@ -20,7 +20,7 @@ function getAvailableBooks() {
 
     ]  
 }
-console.log(getAvailableBooks());
+console.log(getAvailableBooks.title());
 
 // 2. Create a function getBooksByAuthor that takes an author's name as an argument and
 // returns an array of all books by that author.
@@ -32,7 +32,7 @@ function getAvailableBooks() {
         {title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', publicationYear: 1925},
 
     ] 
-    console.log(author);
+    console.log(books.author);
    
     
 }
@@ -42,10 +42,9 @@ getAvailableBooks()
 // to the library, ensuring that the new book has all required properties (title, author,
 // publicationYear, and isAvailable).
 function addNewBook() {
-    let newBook = [books {
-        title: 'The Odyssey', author: 'Homer', publicationYear: 1980
-    
-    },
+    let newBook = [books ({
+        title: 'The Odyssey', author: 'Homer', publicationYear: 1980, isAvailable: true
+    },)
     ]
     
 }
@@ -54,9 +53,20 @@ console.log(addNewBook);
 // the book's isAvailable property to false. If the book is not found in the library, the
 // function should return a message indicating that the book is not available.
 function checkoutBook() {
-        for (let i = 0; i < books.length; i++) {
+    const books = [
+        { title: 'The Catcher in the Rye', author: 'J.D. Salinger', publicationYear: 1951,
+        isAvailable: true },
+        { title: 'Great Expectations', author: 'Charles Dickens', publicationYear: 1861,
+        isAvailable: false },
+        { title: 'Crime and Punishment', author: 'Fyodor Dostoevsky', publicationYear:
+        1866, isAvailable: true },
+        { title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', publicationYear: 1925,
+        isAvailable: false },
+        { title: 'The Odyssey', author: 'Homer', publicationYear: -800, isAvailable: true },
+        ];
+        for (let i = 0; i < books.isAvailable; i++) {
             let rtnBook = books[i];
-            if (book === book) {
+            if (books in books.isAvailable) {
                return("book is available")
                 
             }
@@ -67,7 +77,6 @@ function checkoutBook() {
     }
   }
     console.log(returnBook());
-}
 // 5. Create a function returnBook that takes a book title as an argument and changes the
 // book's isAvailable property to true. If the book is not found in the library, the function
 // should return a message indicating that the book does not belong to the library.
@@ -86,7 +95,7 @@ function returnBook() {
 
           for (let i = 0; i < books.isAvailable; i++) {
               let rtnBook = books[i];
-              if (book in books.isAvailable) {
+              if (books in books.isAvailable) {
                  return("book does not belong to the library")
                   
               }
